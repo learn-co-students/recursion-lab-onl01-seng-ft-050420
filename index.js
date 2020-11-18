@@ -1,7 +1,7 @@
 function printString(string) {
-    if (string.length > 0) {
-        console.log(string[0])
-        return printString( string.substring(1, string.length) )
+    console.log(string[0])
+    if (string.length > 1) {
+        printString( string.substring(1, string.length) )
     }
     else {
         return true
